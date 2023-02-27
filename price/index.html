@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- ↓ レスポンシブ対応に必須の記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ↓ 電話番号を入力した際に自動的リンクを切る-->
+    <!-- 電話番号をクリックした時、自動電話機能を入れたい場合a要素で指定 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- ↓ 検索結果画面で表示される文言 -->
+    <meta name="description" content="">
+    <!-- ↓ 検索ワードをカンマ区切りでcontent内に指定-->
+    <meta name="keywords" content="web,札幌,求職者支援訓練,">
+    <!-- ↓ 検索にヒットしないようにする(noindex) リンクとの関係性を切る（nofollow）-->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- twitter関連 -->
+    <!-- ↓ twitterでリンクに画像を表示 -->
+    <meta name="twitter:card" content="summary">
+    <!-- ↓ @ユーザ名を入力（任意 -->
+    <meta name="twitter:site" content="@username">
+    <!-- ↓ そのページの概要を記述する（任意 -->
+    <meta name="twitter:description" content="">
+    <!-- ↓ そのページのタイトルを入力※短くする-->
+    <meta name="twitter:title" content="">
+    <!-- ↓ ページのコンテンツを表す任意の画像 -->
+    <!-- 画像サイズは144px～4096pxまで。サイズは5MBまで。gif・jpg・png・webpのみ対応(アニメーションは非対応) -->
+    <meta name="twitter:image" content="絶対パス">
+
+    <!-- Facebook関連 -->
+    <!-- ↓ このページのタイトルを記入 -->
+    <meta property="og:title" content="">
+    <!-- ↓ 通常のサイトはcontent="website" -->
+    <meta property="og:type" content="website">
+    <!-- ↓ ページのurlを記入 -->
+    <meta property="og:url" content="絶対パス">
+    <!-- ↓ ページの概要説明を記入 -->
+    <meta property="og:description" content="">
+    <!-- ↓ サイト名 -->
+    <meta property="og:site_name" content="">
+    <!-- ↓ ページリンクを貼り付けた際の画像 -->
+    <meta property="og:image" content="絶対パス">
+
+    <!-- ↓ ファビコン設定 -->
+    <link rel="icon" href="ファビコン画像への相対パス">
+
+    <!-- ↓ iOSホーム画面にリンクを置いた際に表示されるアイコン -->
+    <!-- 画像ファイルの名前は「apple-touch-icon.png」 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="画像への相対パス">
+
+    <title>eureka.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="yoga">
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__nav">
+                    <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__list">Menu</li>
+                    <li id="btn" class="btn">
+                        <span id="btn__top" class="btn__top"></span>
+                        <span id="btn__bottom" class="btn__bottom"></span>
+                    </li>
+                    <li class="nav__list">
+                        <ul class="gnav__nav">
+                            <li class="gnav__list"><a href="#" class="gnav__link">Yoga</a></li>
+                            <li class="gnav__list"><a href="#" class="gnav__link">Pilates</a></li>
+                            <li class="gnav__list"><a href="#" class="gnav__link">Price</a></li>
+                            <li class="gnav__list"><a href="#" class="gnav__link">Instagram</a></li>
+                            <li class="gnav__list"><a href="#" class="gnav__link">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__list"><a href="#" class="nav__link">Reservation</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="intro">
+                <h1 class="intro__ttl">Price</h1>
+                <p class="intro__pic"><img src="" alt="" class="intro__img"></p>
+            </section>
+            <section class="price">
+                <h2 class="price__ttl">(Price)</h2>
+                <div class="price__container">
+                    <h3 class="price__cat">Monthly Member</h3>
+                    <dl class="price__course">
+                        <dt class="price__dt">1回券</dt>
+                        <dd class="price__dd">¥2,200 (taxin)</dd>
+                        <dt class="price__dt">月4回利用コース</dt>
+                        <dd class="price__dd">¥6,600 (taxin)</dd>
+                        <dt class="price__dt">通い放題コース(デイタイム)</dt>
+                        <dd class="price__dd">¥7,800  (taxin)</dd>
+                        <dt class="price__dt">通い放題コース(フルタイム)</dt>
+                        <dd class="price__dd">¥9,800  (taxin)</dd>
+                    </dl>
+                    <p class="price__note">(デイタイムは平日17：00まで、フルタイムはすべての営業時間でのご利用が可能です。)</p>
+                </div>
+                <div class="price__container">
+                    <h3 class="price__cat">Options</h3>
+                    <dl class="price__option">
+                        <dt class="price__dt">タオルレンタル</dt>
+                        <dd class="price__dd">(バスタオル1枚+フェイスタオル1枚を1日1回レンタルしていただけます。)</dd>
+                        <dt class="price__dt">ロッカーキープ</dt>
+                        <dd class="price__dd">(ロッカー1台をマイロッカーとしてご利用いただけます。ヨガマットも収納いただける大きさです。)</dd>
+                        <dt class="price__dt">水素水</dt>
+                        <dd class="price__dd">(レッスン受講時以外も水素水が飲み放題のオプションです。タンブラーは持参したものもお使いいただけます。)</dd>
+                    </dl>
+                </div>
+                <div class="price__container">
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="footer__nav">
+                <li class="footer__list"><a href="#" class="footer__link">Reservation</a></li>
+                <li class="footer__list">03-0000-1234</li>
+                <li class="footer__list">eureka.athletic@eureka.com</li>
+            </ul>
+            <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.
+                    ALL RIGHT RESERVED.
+                </small></p>
+            <p class="footer__top"><a href="#" class="footer__link">introtop</a></p>
+        </footer>
+
+    </div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/function.js"></script>
+</body>
+
+</html>
