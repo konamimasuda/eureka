@@ -1,147 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-  
-    <!-- ↓ レスポンシブ対応に必須の記述 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- ↓ 電話番号を入力した際に自動的リンクを切る-->
-    <!-- 電話番号をクリックした時、自動電話機能を入れたい場合a要素で指定 -->
-    <meta name="format-detection" content="telephone=no">
-    <!-- ↓ 検索結果画面で表示される文言 -->
-    <meta name="description" content="">
-    <!-- ↓ 検索ワードをカンマ区切りでcontent内に指定-->
-    <meta name="keywords" content="web,札幌,求職者支援訓練,">
-    <!-- ↓ 検索にヒットしないようにする(noindex) リンクとの関係性を切る（nofollow）-->
-    <meta name="robots" content="noindex, nofollow">
-  
-    <!-- twitter関連 -->
-    <!-- ↓ twitterでリンクに画像を表示 -->
-    <meta name="twitter:card" content="summary">
-    <!-- ↓ @ユーザ名を入力（任意 -->
-    <meta name="twitter:site" content="@username">
-    <!-- ↓ そのページの概要を記述する（任意 -->
-    <meta name="twitter:description" content="">
-    <!-- ↓ そのページのタイトルを入力※短くする-->
-    <meta name="twitter:title" content="">
-    <!-- ↓ ページのコンテンツを表す任意の画像 -->
-    <!-- 画像サイズは144px～4096pxまで。サイズは5MBまで。gif・jpg・png・webpのみ対応(アニメーションは非対応) -->
-    <meta name="twitter:image" content="絶対パス">
-  
-    <!-- Facebook関連 -->
-    <!-- ↓ このページのタイトルを記入 -->
-    <meta property="og:title" content="">
-    <!-- ↓ 通常のサイトはcontent="website" -->
-    <meta property="og:type" content="website">
-    <!-- ↓ ページのurlを記入 -->
-    <meta property="og:url" content="絶対パス">
-    <!-- ↓ ページの概要説明を記入 -->
-    <meta property="og:description" content="">
-    <!-- ↓ サイト名 -->
-    <meta property="og:site_name" content="">
-    <!-- ↓ ページリンクを貼り付けた際の画像 -->
-    <meta property="og:image" content="絶対パス">
-  
-    <!-- ↓ ファビコン設定 -->
-    <link rel="icon" href="ファビコン画像への相対パス">
-  
-    <!-- ↓ iOSホーム画面にリンクを置いた際に表示されるアイコン -->
-    <!-- 画像ファイルの名前は「apple-touch-icon.png」 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="画像への相対パス">
-  
-    <title>eureka.</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  
-  <body id="top">
-    <div class="wrapper">
-      <header class="header">
-         <nav class="nav">
-          <ul class="nav__nav">
-            <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__list">Menu</li>
-            <li id="btn" class="btn">
-              <span id="btn__top" class="btn__top"></span>
-              <span id="btn__bottom" class="btn__bottom"></span>
-            </li>
-            <li class="nav__list">
-              <ul class="gnav__nav">
-                <li class="gnav__list"><a href="#yoga" class="gnav__link">Yoga</a></li>
-                <li class="gnav__list"><a href="#pilates" class="gnav__link">Pilates</a></li>
-                <li class="gnav__list"><a href="#price" class="gnav__link">Price</a></li>
-                <li class="gnav__list"><a href="#instagram" class="gnav__link">Instagram</a></li>
-                <li class="gnav__list"><a href="#contact" class="gnav__link">Contact</a></li>
-              </ul>
-            </li>
-            <li class="nav__list"><a href="#" class="nav__link">Reservation</a></li>
-          </ul>
-         </nav>
-      </header>
-      <main class="main">
-        <div class="mv">
-          <p class="mv__left"><img src="" alt="女性の首筋" class="mv__img"></p>
-          <p class="mv__right"><img src="" alt="波" class="mv__img"></p>
-          <h1 class="mv__logo"><img src="" alt="ロゴ" class="mv__img"></h1>
-        </div>
-        <section class="about">
-          <p class="about__pic"><img src="" alt="スタジオ" class="about__img"></p>
-          <h2 class="about__ttl">Who we <span class="about__span">a</span>re</h2>
-          <p class="about__pic"><img src="" alt=""></p>
-          <p class="about__eng">We believe in allowing your greatest self-expression to shine through our personalized, expertly delivered treatments.</p>
-          <p class="about__txt">Eureka.は心地よく身体を動かし心身をゆるめることで、
-            ひとりひとりが自分と向き合う時間と場所を提供する
-            トータルビューティーサロンです。</p>
-        </section>
-        <div class="letter">
-          <p class="letter__txt">He<span class="letter__span">a</span>lthy Retreat</p>
-          <p class="letter__txt">He<span class="letter__span">a</span>lthy Retreat</p>
-          <p class="letter__txt">He<span class="letter__span">a</span>lthy Retreat</p>
-        </div>
-        <section class="menu">
-          <h2 class="menu__ttl">(Menu)</h2>
-          <p class="menu__txt研ぎ澄まされた感性と高い技術により、外側だけでなく内面からも美しく整う様な場所を目指しています。
-          インナーマッスルから鍛えて、しなやかで芯のある身体へと導きます。"></p>
-          <ul class="menu__ul">
-            <li class="menu__li"><a href="" class="menu__link">Yoga</a></li>
-            <li class="menu__li"><a href="" class="menu__link">Pilates</a></li>
-            <li class="menu__li"><a href="" class="menu__link">Price</a></li>
-            <li class="menu__li"><a href="" class="menu__link">Instagram</a></li>
-            <li class="menu__li"><a href="" class="menu__link">Contact</a></li>
-          </ul>
-        </section>
-        <div class="instagram">
-          <!-- swiperでインスタの画像入れる -->
-        </div>
-        <section class="salon">
-          <h2 class="salon__ttl">(Salon)</h2>
-          <dl class="salon__dl">
-            <dt class="salon__dt">Location</dt>
-            <dd class="salon__dd">1201 kawagoe bld.
-              3-8-1 ebisu shibuya-ku
-              Tokyo 150-0013, japan</dd>
-              <dt class="salon__dt">Contact</dt>
-              <dd class="salon__dd">T: 03-0000-1234
-                M: eureka.athletic@eureka.com</dd>
-          </dl>
-          <p class="salon__location"><a href="#" class="salon__link">Salon</a></p>
-        </section>
-      </main>
-      <footer class="footer">
-        <ul class="footer__nav">
-          <li class="footer__list"><a href="#" class="footer__link">Reservation</a></li>
-          <li class="footer__list">03-0000-1234</li>
-          <li class="footer__list">eureka.athletic@eureka.com</li>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="ファビコン画像への相対パス">
+  <link rel="apple-touch-icon" sizes="180x180" href="画像への相対パス">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'yqg8mjw',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <title>eureka.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top">
+  <div class="wrapper">
+    <header class="header">
+      <p class="header__home"><a href="#" class="header__link">Home</a></p>
+      <p class="header__menu">Menu</p>
+      .
+      <div class="btn">
+        <span id="btn__top" class="btn__top"></span>
+        <span id="btn__bottom" class="btn__bottom"></span>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__nav">
+
+          <li class="nav__list slide">
+            <ul class="gnav__nav">
+              <li class="gnav__list"><a href="yoga/index.html" class="gnav__link">Yoga</a></li>
+              <li class="gnav__list"><a href="pilates/index.html" class="gnav__link">Pilates</a></li>
+              <li class="gnav__list"><a href="price/index.html" class="gnav__link">Price</a></li>
+              <li class="gnav__list"><a href="https://www.instagram.com/" class="gnav__link"
+                  target="_blank">Instagram</a></li>
+              <li class="gnav__list"><a href="#contact" class="gnav__link">Contact</a></li>
+            </ul>
+          </li>
+          <li class="nav__list reservebtn"><a href="#" class="nav__link">Reservation</a></li>
         </ul>
-        <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.
+      </nav>
+    </header>
+    <main class="main">
+      <div class="mv">
+        <p class="mv__left"><img src="" alt="女性の首筋" class="mv__img"></p>
+        <p class="mv__right"><img src="" alt="波" class="mv__img"></p>
+        <h1 class="mv__logo"><img src="" alt="ロゴ" class="mv__img"></h1>
+      </div>
+      <section class="about">
+        <p class="about__pic"><img src="" alt="スタジオ" class="about__img"></p>
+        <h2 class="about__ttl">Who we <span class="about__span">a</span>re</h2>
+        <p class="about__pic"><img src="" alt=""></p>
+        <p class="about__eng">We believe in allowing your greatest self-expression to shine through our personalized,
+          expertly delivered treatments.</p>
+        <p class="about__txt">Eureka.は心地よく身体を動かし心身をゆるめることで、
+          ひとりひとりが自分と向き合う時間と場所を提供する
+          トータルビューティーサロンです。</p>
+      </section>
+      <div class="letter">
+        <p class="letter__txt">He<span class="letter__span">a</span>lthy Retreat</p>
+        <p class="letter__txt">He<span class="letter__span">a</span>lthy Retreat</p>
+        <p class="letter__txt">He<span class="letter__span">a</span>lthy Retreat</p>
+      </div>
+      <section class="menu">
+        <h2 class="menu__ttl">(Menu)</h2>
+        <p class="menu__txt研ぎ澄まされた感性と高い技術により、外側だけでなく内面からも美しく整う様な場所を目指しています。
+          インナーマッスルから鍛えて、しなやかで芯のある身体へと導きます。"></p>
+        <ul class="menu__ul">
+          <li class="menu__li"><a href="" class="menu__link">Yoga</a></li>
+          <li class="menu__li"><a href="" class="menu__link">Pilates</a></li>
+          <li class="menu__li"><a href="" class="menu__link">Price</a></li>
+          <li class="menu__li"><a href="" class="menu__link">Instagram</a></li>
+          <li class="menu__li"><a href="" class="menu__link">Contact</a></li>
+        </ul>
+      </section>
+      <div class="instagram">
+        <!-- swiperでインスタの画像入れる -->
+      </div>
+      <section class="salon">
+        <h2 class="salon__ttl">(Salon)</h2>
+        <dl class="salon__dl">
+          <dt class="salon__dt">Location</dt>
+          <dd class="salon__dd">1201 kawagoe bld.
+            3-8-1 ebisu shibuya-ku
+            Tokyo 150-0013, japan</dd>
+          <dt class="salon__dt">Contact</dt>
+          <dd class="salon__dd">T: 03-0000-1234
+            M: eureka.athletic@eureka.com</dd>
+        </dl>
+        <p class="salon__location"><a href="#" class="salon__link">Salon</a></p>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__list"><a href="#" class="footer__link">Reservation</a></li>
+        <li class="footer__list">03-0000-1234</li>
+        <li class="footer__list">eureka.athletic@eureka.com</li>
+      </ul>
+      <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.
           ALL RIGHT RESERVED.
         </small></p>
-        <p class="footer__top"><a href="#" class="footer__link">Pagetop</a></p>
-      </footer>
+      <p class="footer__top"><a href="#" class="footer__link">Pagetop</a></p>
+    </footer>
 
-    </div>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/function.js"></script>
-  </body>
+  </div>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
 </html>
