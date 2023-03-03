@@ -1,12 +1,31 @@
 @use "../global" as *;
 
 .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     padding: 18px 13px 0;
-    font-size: 14.5px;
+    font-size: 16px;
+
+    &__home {
+        margin-right: auto;
+    }
 
     &__link {
         @include link;
+    }
+
+    &__menu {
+        margin-right: 12px;
+    }
+
+    &__reserve {
+        display: none;
     }
 
 }

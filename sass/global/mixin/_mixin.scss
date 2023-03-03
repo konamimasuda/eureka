@@ -11,4 +11,36 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
+}
+
+@mixin ttl($fz: 3.2vw, $fw: 600) {
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: 1.9;
+    letter-spacing: 0.05em;
+}
+
+@mixin ttlNo($no: 1, $dp: inline-block, $fz: 12px, $fw: 500) {
+
+    &::before {
+        content: "00"+ $no;
+        display: $dp;
+        font-family: $en;
+        font-size: $fz;
+        font-weight: $fw;
+    }
+
+}
+
+@mixin rem($fz: 16px) {
+    font-family: $rem;
+    font-size: $fz;
+}
+
+@mixin txt($fz: 2.93vw, $lh: 2.18, $ls: 0.04em) {
+    font-family: $jp;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
 }

@@ -1,28 +1,10 @@
 @use "../global" as *;
 
-.nav {
-
-    &__nav {
-        display: flex;
-    }
-
-    &__link {
-        @include link;
-    }
-}
-
-
 .gnav {
 
+    display: none;
+
     &__link {
         @include link;
     }
-}
-
-.slide {
-    display: none;
-}
-
-.reservebtn {
-    display: none;
 }
