@@ -3,95 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <!-- ↓ レスポンシブ対応に必須の記述 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ↓ 電話番号を入力した際に自動的リンクを切る-->
-    <!-- 電話番号をクリックした時、自動電話機能を入れたい場合a要素で指定 -->
-    <meta name="format-detection" content="telephone=no">
-    <!-- ↓ 検索結果画面で表示される文言 -->
-    <meta name="description" content="">
-    <!-- ↓ 検索ワードをカンマ区切りでcontent内に指定-->
-    <meta name="keywords" content="web,札幌,求職者支援訓練,">
-    <!-- ↓ 検索にヒットしないようにする(noindex) リンクとの関係性を切る（nofollow）-->
     <meta name="robots" content="noindex, nofollow">
-
-    <!-- twitter関連 -->
-    <!-- ↓ twitterでリンクに画像を表示 -->
-    <meta name="twitter:card" content="summary">
-    <!-- ↓ @ユーザ名を入力（任意 -->
-    <meta name="twitter:site" content="@username">
-    <!-- ↓ そのページの概要を記述する（任意 -->
-    <meta name="twitter:description" content="">
-    <!-- ↓ そのページのタイトルを入力※短くする-->
-    <meta name="twitter:title" content="">
-    <!-- ↓ ページのコンテンツを表す任意の画像 -->
-    <!-- 画像サイズは144px～4096pxまで。サイズは5MBまで。gif・jpg・png・webpのみ対応(アニメーションは非対応) -->
-    <meta name="twitter:image" content="絶対パス">
-
-    <!-- Facebook関連 -->
-    <!-- ↓ このページのタイトルを記入 -->
-    <meta property="og:title" content="">
-    <!-- ↓ 通常のサイトはcontent="website" -->
-    <meta property="og:type" content="website">
-    <!-- ↓ ページのurlを記入 -->
-    <meta property="og:url" content="絶対パス">
-    <!-- ↓ ページの概要説明を記入 -->
-    <meta property="og:description" content="">
-    <!-- ↓ サイト名 -->
-    <meta property="og:site_name" content="">
-    <!-- ↓ ページリンクを貼り付けた際の画像 -->
-    <meta property="og:image" content="絶対パス">
-
-    <!-- ↓ ファビコン設定 -->
-    <link rel="icon" href="ファビコン画像への相対パス">
-
-    <!-- ↓ iOSホーム画面にリンクを置いた際に表示されるアイコン -->
-    <!-- 画像ファイルの名前は「apple-touch-icon.png」 -->
-    <link rel="apple-touch-icon" sizes="180x180" href="画像への相対パス">
-
-    <title>eureka.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'yqg8mjw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>eureka. | Yoga</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body id="pilates">
     <div class="wrapper">
+
         <header class="header">
-            <nav class="nav">
-                <ul class="nav__nav">
-                    <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__list">Menu</li>
-                    <li id="btn" class="btn">
-                        <span id="btn__top" class="btn__top"></span>
-                        <span id="btn__bottom" class="btn__bottom"></span>
+            <p class="header__home"><a href="../index.html" class="header__link">Home</a></p>
+            <p id="header__menu" class="header__menu">Menu</p>
+            <div id="btn" class="btn">
+                <span id="btn__top" class="btn__top"></span>
+                <span id="btn__bottom" class="btn__bottom"></span>
+            </div>
+            <nav id="gnav" class="gnav">
+                <ul class="gnav__nav">
+                    <li class="gnav__list"><a href="../yoga/index.html" class="gnav__link">Yoga</a></li>
+                    <li class="gnav__list"><a href="#" class="gnav__link">Pilates</a></li>
+                    <li class="gnav__list"><a href="../price/index.html" class="gnav__link">Price</a></li>
+                    <li class="gnav__list"><a href="https://www.instagram.com/" class="gnav__link"
+                            target="_blank">Instagram</a>
                     </li>
-                    <li class="nav__list">
-                        <ul class="gnav__nav">
-                            <li class="gnav__list"><a href="#" class="gnav__link">Yoga</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Pilates</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Price</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Instagram</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Contact</a></li>
+                    <li class="gnav__list"><a href="../index.html#contact" class="gnav__link">Contact</a></li>
+                </ul>
+                <ul class="gnav__box">
+                    <li class="gnav__reserve"><a href="../index.html" class="gnav__reservelink"><span
+                                class="gnav__pause">Reservation</span>
+                        </a>
+                        <div class="gnav__move">
+                            <span class="gnav__span">Reservation&nbsp;</span>
+                            <span class="gnav__span">Reservation&nbsp;</span>
+                            <span class="gnav__span">Reservation&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="gnav__contact">Contact</li>
+                    <li class="gnav__address">
+                        <ul class="address">
+                            <li class="address__tel">03-0000-1234</li>
+                            <li class="address__mail">eureka@eureka.com</li>
                         </ul>
-                    </li>
-                    <li class="nav__list"><a href="#" class="nav__link">Reservation</a></li>
                 </ul>
             </nav>
         </header>
+
         <main class="main">
             <section class="intro">
                 <h1 class="intro__ttl">Pilates</h1>
                 <ul class="intro__ul">
-                    <li class="intro__list"><a href="#" class="intro__link">About</a></li>
-                    <li class="intro__list"><a href="#" class="intro__link">Lesson Menu</a></li>
+                    <li class="intro__list"><a href="#about" class="intro__link">About</a></li>
+                    <li class="intro__list"><a href="#lesson" class="intro__link">Lesson Menu</a></li>
                 </ul>
-                <p class="intro__pic"><img src="" alt="" class="intro__img"></p>
+                <p class="intro__pic"><img src="../images/pilates/fv.jpg" alt="ピラティス" class="intro__img"></p>
             </section>
-            <section class="about">
+            <section id="about" class="about">
                 <h2 class="about__ttl">(About)</h2>
-                <p class="about__cap">身体の柔軟性を高め、強化し、バランスを整える。
-                    心と身体、そして精神を調和させながら鍛え、内側から自信があふれる自分へ。</p>
+                <p class="about__cap">身体の柔軟性を高め、強化し、バランスを整える。<br>心と身体、そして精神を調和させながら鍛え、内側から自信があふれる自分へ。</p>
                 <p class="about__txt">ピラティスとは、ヨガ、武道、フィットネス、アレクサンダーテクニークなどのボディワーク、瞑想法、呼吸法などの融合体であり、完全体である。
 
                     ヨガやフィットネスやその他ボディワークと違うからこそ、継続して出来上がる身体、心はまるで違うものになる。
@@ -99,19 +80,25 @@
                     それは、背骨が軸となってしなやかに伸びあがった美しい身体であり、軸、中心部分以外の筋肉は柔らかにゆるんだ状態であり、肩は落ち、胸は開き、首は長く、手脚も長く伸びた身体になる。
                     その全体としてゆるんだ身体は、こころをリラックスさせて、表情も穏やかにゆるみ、楽観的に、前向きに、そしてエネルギッシュにさせます。</p>
             </section>
-            <section class="lesson">
+            <section id="lesson" class="lesson">
                 <h2 class="lesson__ttl">(Lesson Menu)</h2>
                 <div class="lesson__box">
                     <h3 class="lesson__cat">Basic</h3>
                     <dl class="lesson__dl">
                         <dt class="lesson__dt">ピラティスベーシック 60min</dt>
-                        <dd class="lesson__dd">はじめての方にもわかりやすい、基本のフォームや呼吸法から取り組むレッスンです。ピラティスの専門用語もしっかり解説しながら進めていきますので、ひとつひとつの動きをじっくり深めることができます。</dd>
+                        <dd class="lesson__dd">
+                            はじめての方にもわかりやすい、基本のフォームや呼吸法から取り組むレッスンです。ピラティスの専門用語もしっかり解説しながら進めていきますので、ひとつひとつの動きをじっくり深めることができます。
+                        </dd>
                         <dt class="lesson__dt">姿勢改善マシンピラティス 60min</dt>
-                        <dd class="lesson__dd">ピラティスマシンを使いながら、インナーマッスルを意識して身体を動かすレッスンです。主に上半身を重点的に動かすメニューを組んでいますので、腹筋と背筋を両方鍛え、まるまりがちな姿勢を改善します。</dd>
+                        <dd class="lesson__dd">
+                            ピラティスマシンを使いながら、インナーマッスルを意識して身体を動かすレッスンです。主に上半身を重点的に動かすメニューを組んでいますので、腹筋と背筋を両方鍛え、まるまりがちな姿勢を改善します。
+                        </dd>
                         <dt class="lesson__dt">ピラティスアドバンス 70min</dt>
-                        <dd class="lesson__dd">全身を使ったパワフルな動きと呼吸を連動させ、筋力と柔軟性を高めるレッスンです。呼吸に意識を向けながら、コア部分を鍛え上げます。呼吸を通しながら心身を磨き上げたい、中上級者向けのプログラムです。</dd>
+                        <dd class="lesson__dd">
+                            全身を使ったパワフルな動きと呼吸を連動させ、筋力と柔軟性を高めるレッスンです。呼吸に意識を向けながら、コア部分を鍛え上げます。呼吸を通しながら心身を磨き上げたい、中上級者向けのプログラムです。
+                        </dd>
                     </dl>
-                    <p class="lesson__pic"><img src="" alt="" class="lesson__img"></p>
+                    <p class="lesson__pic"><img src="../images/pilates/basic.jpg" alt="ピラティス" class="lesson__img"></p>
                 </div>
                 <ul class="lesson__attention">
                     <li class="lesson__note">レッスンは完全予約制です。Web、お電話、店頭のいずれかでご予約ください。</li>
@@ -121,21 +108,23 @@
             </section>
         </main>
         <footer class="footer">
-            <ul class="footer__nav">
-                <li class="footer__list"><a href="#" class="footer__link">Reservation</a></li>
-                <li class="footer__list">03-0000-1234</li>
-                <li class="footer__list">eureka.athletic@eureka.com</li>
-            </ul>
-            <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.
-                    ALL RIGHT RESERVED.
-                </small></p>
-            <p class="footer__top"><a href="#" class="footer__link">introtop</a></p>
+            <div class="footer__wrap">
+                <ul class="footer__nav">
+                    <li class="footer__list"><a href="../index.html" class="footer__link">Reservation</a></li>
+                    <li class="footer__list">03-0000-1234</li>
+                    <li class="footer__list">eureka@eureka.com</li>
+                </ul>
+                <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.<br>
+                        ALL RIGHT RESERVED.
+                    </small></p>
+                <p class="footer__top"><a href="#" class="footer__home">Pagetop</a></p>
+            </div>
         </footer>
-
     </div>
-    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/function.js"></script>
+    <script src="../js/function.js"></script>
 </body>
 
 </html>

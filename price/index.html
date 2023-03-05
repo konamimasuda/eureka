@@ -5,67 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <link rel="icon" href="ファビコン画像への相対パス">
-    <link rel="apple-touch-icon" sizes="180x180" href="画像への相対パス">
-
-    <title>eureka.</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'yqg8mjw',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <title>eureka. | Yoga</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body id="price">
     <div class="wrapper">
         <header class="header">
-            <nav class="nav">
-                <ul class="nav__nav">
-                    <li class="nav__list"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__list">Menu</li>
-                    <li id="btn" class="btn">
-                        <span id="btn__top" class="btn__top"></span>
-                        <span id="btn__bottom" class="btn__bottom"></span>
+            <p class="header__home"><a href="../index.html" class="header__link">Home</a></p>
+            <p id="header__menu" class="header__menu">Menu</p>
+            <div id="btn" class="btn">
+                <span id="btn__top" class="btn__top"></span>
+                <span id="btn__bottom" class="btn__bottom"></span>
+            </div>
+            <nav id="gnav" class="gnav">
+                <ul class="gnav__nav">
+                    <li class="gnav__list"><a href="../yoga/index.html" class="gnav__link">Yoga</a></li>
+                    <li class="gnav__list"><a href="../pilates/index.html" class="gnav__link">Pilates</a></li>
+                    <li class="gnav__list"><a href="#" class="gnav__link">Price</a></li>
+                    <li class="gnav__list"><a href="https://www.instagram.com/" class="gnav__link"
+                            target="_blank">Instagram</a>
                     </li>
-                    <li class="nav__list">
-                        <ul class="gnav__nav">
-                            <li class="gnav__list"><a href="#" class="gnav__link">Yoga</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Pilates</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Price</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Instagram</a></li>
-                            <li class="gnav__list"><a href="#" class="gnav__link">Contact</a></li>
+                    <li class="gnav__list"><a href="../index.html#contact" class="gnav__link">Contact</a></li>
+                </ul>
+                <ul class="gnav__box">
+                    <li class="gnav__reserve"><a href="../index.html" class="gnav__reservelink"><span
+                                class="gnav__pause">Reservation</span>
+                        </a>
+                        <div class="gnav__move">
+                            <span class="gnav__span">Reservation&nbsp;</span>
+                            <span class="gnav__span">Reservation&nbsp;</span>
+                            <span class="gnav__span">Reservation&nbsp;</span>
+                        </div>
+                    </li>
+                    <li class="gnav__contact">Contact</li>
+                    <li class="gnav__address">
+                        <ul class="address">
+                            <li class="address__tel">03-0000-1234</li>
+                            <li class="address__mail">eureka@eureka.com</li>
                         </ul>
-                    </li>
-                    <li class="nav__list"><a href="#" class="nav__link">Reservation</a></li>
                 </ul>
             </nav>
         </header>
         <main class="main">
             <section class="intro">
                 <h1 class="intro__ttl">Price</h1>
-                <p class="intro__pic"><img src="" alt="" class="intro__img"></p>
+                <p class="intro__pic"><img src="../images/price/fv.jpg" alt="" class="intro__img"></p>
             </section>
             <section class="price">
                 <h2 class="price__ttl">(Price)</h2>
                 <div class="price__container">
                     <h3 class="price__cat">Monthly Member</h3>
                     <dl class="price__course">
-                        <dt class="price__dt">1回券</dt>
-                        <dd class="price__dd">¥2,200 (taxin)</dd>
-                        <dt class="price__dt">月4回利用コース</dt>
-                        <dd class="price__dd">¥6,600 (taxin)</dd>
-                        <dt class="price__dt">通い放題コース(デイタイム)</dt>
-                        <dd class="price__dd">¥7,800 (taxin)</dd>
-                        <dt class="price__dt">通い放題コース(フルタイム)</dt>
-                        <dd class="price__dd">¥9,800 (taxin)</dd>
+                        <div class="price__box">
+                            <dt class="price__dt">1回券</dt>
+                            <dd class="price__dd">¥2,200 (taxin)</dd>
+                        </div>
+                        <div class="price__box">
+                            <dt class="price__dt">月4回利用コース</dt>
+                            <dd class="price__dd">¥6,600 (taxin)</dd>
+                        </div>
+                        <div class="price__box">
+                            <dt class="price__dt">通い放題コース(デイタイム)</dt>
+                            <dd class="price__dd">¥7,800 (taxin)</dd>
+                        </div>
+                        <div class="price__box">
+                            <dt class="price__dt">通い放題コース(フルタイム)</dt>
+                            <dd class="price__dd">¥9,800 (taxin)</dd>
+                        </div>
                     </dl>
                     <p class="price__info">(デイタイムは平日17：00まで、フルタイムはすべての営業時間でのご利用が可能です。)</p>
                 </div>
                 <div class="price__container">
                     <h3 class="price__cat">Options</h3>
                     <dl class="price__option">
-                        <dt class="price__dt">タオルレンタル</dt>
-                        <dd class="price__dd">(バスタオル1枚+フェイスタオル1枚を1日1回レンタルしていただけます。)</dd>
-                        <dt class="price__dt">ロッカーキープ</dt>
-                        <dd class="price__dd">(ロッカー1台をマイロッカーとしてご利用いただけます。ヨガマットも収納いただける大きさです。)</dd>
-                        <dt class="price__dt">水素水</dt>
-                        <dd class="price__dd">(レッスン受講時以外も水素水が飲み放題のオプションです。タンブラーは持参したものもお使いいただけます。)</dd>
+                        <div class="price__group">
+                            <dt class="price__dt">タオルレンタル</dt>
+                            <dd class="price__dd">(バスタオル1枚+フェイスタオル1枚を1日1回レンタルしていただけます。)</dd>
+                        </div>
+                        <div class="price__group">
+                            <dt class="price__dt">ロッカーキープ</dt>
+                            <dd class="price__dd">(ロッカー1台をマイロッカーとしてご利用いただけます。ヨガマットも収納いただける大きさです。)</dd>
+                        </div>
+                        <div class="price__group">
+                            <dt class="price__dt">水素水</dt>
+                            <dd class="price__dd">(レッスン受講時以外も水素水が飲み放題のオプションです。タンブラーは持参したものもお使いいただけます。)</dd>
+                        </div>
                     </dl>
                 </div>
                 <ul class="price__attention">
@@ -90,21 +127,23 @@
             </section>
         </main>
         <footer class="footer">
-            <ul class="footer__nav">
-                <li class="footer__list"><a href="#" class="footer__link">Reservation</a></li>
-                <li class="footer__list">03-0000-1234</li>
-                <li class="footer__list">eureka.athletic@eureka.com</li>
-            </ul>
-            <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.
-                    ALL RIGHT RESERVED.
-                </small></p>
-            <p class="footer__top"><a href="#" class="footer__link">introtop</a></p>
+            <div class="footer__wrap">
+                <ul class="footer__nav">
+                    <li class="footer__list"><a href="../index.html" class="footer__link">Reservation</a></li>
+                    <li class="footer__list">03-0000-1234</li>
+                    <li class="footer__list">eureka@eureka.com</li>
+                </ul>
+                <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.<br>
+                        ALL RIGHT RESERVED.
+                    </small></p>
+                <p class="footer__top"><a href="#" class="footer__home">Pagetop</a></p>
+            </div>
         </footer>
-
     </div>
-    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/function.js"></script>
+    <script src="../js/function.js"></script>
 </body>
 
 </html>

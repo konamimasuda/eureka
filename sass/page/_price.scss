@@ -1,1 +1,282 @@
 @use "../global" as *;
+
+#price {
+
+    .main {
+        margin: 29.3vw 0 5.3vw;
+        padding: 0 13px;
+        font-family: $jp;
+        font-size: 3vw;
+        line-height: 1.8;
+        letter-spacing: 0.05em;
+
+        @media screen and (min-width: 768px) {
+            margin: 17.5vw 0 7.8vw;
+            padding: 0 25px;
+            font-size: 1.4vw;
+            line-height: 1.2;
+            letter-spacing: 0.08em;
+        }
+        
+        @media screen and (min-width: 1024px) {
+            margin: 14.6vw 0 20vw;
+            padding: 0 64px;
+            font-size: .8vw;
+        }
+    }
+
+    .intro {
+
+        margin-bottom: 9.3vw;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 5.2vw;
+        }
+
+        &__ttl {
+            margin-bottom: 2.93vw;
+            font-family: $en;
+            font-size: 13.3vw;
+            font-weight: 500;
+
+            @media screen and (min-width: 768px) {
+                margin-bottom: 3.9w;
+                font-size: 6.7vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+                font-size: 7vw;
+            }
+
+            &::after {
+                content: "ご利用料金";
+                display: block;
+                font-family: $jp;
+                font-size: 2.7vw;
+                line-height: 1;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1.5vw;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    font-size: .8vw;
+                }
+            }
+        }
+
+        &__pic {
+            width: 100%;
+            height: 72.8vw;
+
+            @media screen and (min-width: 768px) {
+                height: 60vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+                height: 41.6vw;
+            }
+        }
+
+        &__img {
+            @include img;
+        }
+    }
+
+    .price {
+
+        @media screen and (min-width: 768px) {
+            position: relative;
+        }
+
+        &__ttl {
+            @include pagettl;
+            margin-bottom: 8vw;
+
+            @media screen and (min-width: 768px) {
+                @include pagettl($fz: 1.3vw);
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-bottom: 5.2vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+                @include pagettl($fz: 1.1vw);
+                position: absolute;
+                top: -.7vw;
+                left: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        &__cat {
+            margin-bottom: 2.13VW;
+            font-family: $en;
+            font-size: 3.46vw;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.5vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+                margin-bottom: 2.3vw;
+              font-size: 1.1vw;
+            }
+        }
+
+        &__container {
+            margin-bottom: 16vw;
+
+            @media screen and (min-width: 768px) {
+                width: 80%;
+                margin: 0 0 10.4vw auto;
+
+                &:nth-of-type(2) {
+
+                    .price__dt {
+                        font-weight: 500;
+                    }
+
+                    .price__dd {
+                        margin-bottom: 1.1vw;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+              margin-bottom: 3.64vw;
+            }
+        }
+
+        &__course {
+            margin-bottom: 2.6vw;
+
+            @media screen and (min-width: 1024px) {
+              margin-bottom: .83vw;
+            }
+        }
+
+        &__box {
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (min-width: 768px) {
+                width: 55%;
+                margin-bottom: 1vw;
+            }
+            &:not(:last-of-type) {
+                margin-bottom: 1.5vw;
+
+                @media screen and (min-width: 1024px) {
+                  margin-bottom: .93vw;
+                }
+
+            }
+        }
+
+        &__group {
+            @media screen and (min-width: 1024px) {
+              display: grid;
+              grid-template-columns: 1fr 8fr;
+            }
+        }
+
+        &__dt {
+            font-size: 3.2vw;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.4vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+              font-size: 1vw;
+            }
+        }
+
+        &__dd {
+            font-size: 2.9vw;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.3vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+              font-size: .9vw;
+            }
+
+        }
+
+        &__info {
+            font-size: 2.7vw;
+
+            @media screen and (min-width: 768px) {
+                font-size: 1.3vw;
+                line-height: 1.5;
+            }
+
+            @media screen and (min-width: 1024px) {
+              font-size: 0.7vw;
+            }
+        }
+
+        &__attention {
+            font-size: 2.6vw;
+            letter-spacing: 0;
+            list-style-type: none;
+
+            @media screen and (min-width: 768px) {
+                width: 80%;
+                margin-left: auto;
+                font-size: 1.3vw;
+                line-height: 1.5;
+            }
+
+            @media screen and (min-width: 1024px) {
+              font-size: .8vw;
+            }
+        }
+
+        &__list {
+            margin-bottom: 6.4vw;
+
+            @media screen and (min-width: 768px) {
+              margin-bottom: 4vw;
+            }
+
+            @media screen and (min-width: 1024px) {
+              margin-bottom: 1.25vw;
+            }            
+        }
+
+        &__note {
+            margin-bottom: 1.8vw;
+
+            &::before {
+                content: "※";
+            }
+
+            @media screen and (min-width: 1024px) {
+              margin-bottom: 0;
+            }
+        }
+    }
+
+    .attention {
+
+        list-style-type: none;
+
+        &__list {
+
+            &::before {
+                content: "・";
+            }
+
+            @media screen and (min-width: 1024px) {
+              line-height: 2.5;
+            }
+        }
+    }
+
+}
