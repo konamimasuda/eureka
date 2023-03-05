@@ -1,7 +1,7 @@
 @use "../setting" as *;
 
-@mixin link {
-    display: block;
+@mixin link($dp: block) {
+    display: $dp;
     text-decoration: none;
     color: $black;
 }
@@ -14,33 +14,70 @@
     object-position: center center;
 }
 
-@mixin ttl($fz: 3.2vw, $fw: 600) {
+@mixin ttl($fz: 3.2vw, $fw: 500, $lh: 1.9) {
     font-size: $fz;
     font-weight: $fw;
-    line-height: 1.9;
+    line-height: $lh;
     letter-spacing: 0.05em;
 }
 
-@mixin ttlNo($no: 1, $dp: inline-block, $fz: 12px, $fw: 500) {
+@mixin ttlNo($no: 1, $dp: inline-block, $mr: 8vw, $fz: 3.2vw, $fw: 500, $lh: 1) {
 
     &::before {
         content: "00"+ $no;
         display: $dp;
+        margin-right: $mr;
         font-family: $en;
         font-size: $fz;
         font-weight: $fw;
+        line-height: $lh;
     }
 
 }
 
-@mixin rem($fz: 16px) {
-    font-family: $rem;
-    font-size: $fz;
-}
-
-@mixin txt($fz: 2.93vw, $lh: 2.18, $ls: 0.04em) {
+@mixin txt($fz: 2.93vw, $lh: 2.18, $ls: 0.03em) {
     font-family: $jp;
     font-size: $fz;
     line-height: $lh;
     letter-spacing: $ls;
+}
+
+@mixin linkhover {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@mixin pagettl($fz: 3.33vw) {
+    font-family: $en;
+    font-size: $fz;
+    font-weight: 500;
+    line-height: 1.9;letter-spacing: 0.05em;
+}
+
+@mixin pagecap($fz: 3.6vw) {
+    font-size: $fz;
+    font-weight: 500;
+    line-height: 1.7;
+    letter-spacing: 0.04em;
+}
+
+@mixin catttl($fz: 10vw) {
+    position: absolute;
+    top: 0;
+    left: -1vw;
+    width: fit-content;
+    font-family: $en;
+    font-size: $fz;
+    font-weight: 500;
+    line-height: 1;
+    color: $blue;
+    writing-mode: vertical-rl;
+}
+
+@mixin dt($fz: 3.46vw) {
+    margin-bottom: 1vw;
+    font-size: $fz;
+    font-weight: 600;
+    letter-spacing: 0.05em;
 }

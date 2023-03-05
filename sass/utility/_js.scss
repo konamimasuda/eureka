@@ -1,1 +1,22 @@
 @use "../global" as *;
+
+#top,
+#yoga {
+    
+    .rotateTop {
+        transform: rotate(45deg);
+    }
+    
+    .rotateBottom {
+        transform: rotate(-45deg);
+    }
+    
+    .slideGnav {
+        transform: translateY(0);
+    }
+    
+    .hoverCursor {
+        visibility: visible;
+        transform: scale(1);
+    }
+}
