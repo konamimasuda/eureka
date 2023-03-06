@@ -17,13 +17,13 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
-    <title>eureka. | Yoga</title>
+    <title>eureka. | Price</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body id="price">
     <div class="wrapper">
-        <header class="header">
+        <header id="header" class="header">
             <p class="header__home"><a href="../index.html" class="header__link">Home</a></p>
             <p id="header__menu" class="header__menu">Menu</p>
             <div id="btn" class="btn">
@@ -34,7 +34,7 @@
                 <ul class="gnav__nav">
                     <li class="gnav__list"><a href="../yoga/index.html" class="gnav__link">Yoga</a></li>
                     <li class="gnav__list"><a href="../pilates/index.html" class="gnav__link">Pilates</a></li>
-                    <li class="gnav__list"><a href="#" class="gnav__link">Price</a></li>
+                    <li class="gnav__list"><a href="#header" class="gnav__link">Price</a></li>
                     <li class="gnav__list"><a href="https://www.instagram.com/" class="gnav__link"
                             target="_blank">Instagram</a>
                     </li>
@@ -136,7 +136,7 @@
                 <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.<br>
                         ALL RIGHT RESERVED.
                     </small></p>
-                <p class="footer__top"><a href="#" class="footer__home">Pagetop</a></p>
+                <p class="footer__top"><a href="#header" class="footer__home">Pagetop</a></p>
             </div>
         </footer>
     </div>

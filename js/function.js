@@ -26,6 +26,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 
+  //smooth scroll
+  const gnavLink = document.querySelectorAll('a[href^="#"]');
+    
+  gnavLink.forEach((gnavLink) => {
+      gnavLink.addEventListener('click', (e) => {
+          console.log(gnavLink);
+          e.preventDefault();
+          const hrefLink = gnavLink.getAttribute('href');
+          const targetContent = document.getElementById(hrefLink.replace('#', ''));
+          const rectTop = targetContent.getBoundingClientRect().top;
+          const positionY = window.pageYOffset;
+          const target = rectTop + positionY;
+
+          window.scrollTo({
+              top: target,
+              behavior: 'smooth',
+          });
+      });
+  });
+
+
   //border animation
   gsap.to(".menu__span", {
     width: "100%",

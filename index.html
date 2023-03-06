@@ -7,6 +7,7 @@
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  
   <script>
     (function (d) {
       var config = {
@@ -14,18 +15,18 @@
         scriptTimeout: 3000,
         async: true
       },
-        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+      h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
     })(document);
-  </script>
+    </script>
   <title>eureka.</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body id="top">
-  <div id="cursor" class="cursor"><p class="cursor__txt">< Drag ></Drag></p></div>
+  <div id="cursor" class="cursor"><p class="cursor__txt">&lt; Drag &gt;</Drag></p></div>
   <div class="wrapper">
     <header class="header">
-      <p class="header__home"><a href="#" class="header__link">Home</a></p>
+      <p class="header__home"><a href="#top" class="header__link">Home</a></p>
       <p id="header__menu" class="header__menu">Menu</p>
       <div id="btn" class="btn">
         <span id="btn__top" class="btn__top"></span>
@@ -41,7 +42,7 @@
           <li class="gnav__list"><a href="#contact" class="gnav__link">Contact</a></li>
         </ul>
         <ul class="gnav__box">
-          <li class="gnav__reserve"><a href="#" class="gnav__reservelink"><span class="gnav__pause">Reservation</span>
+          <li class="gnav__reserve"><a href="#top" class="gnav__reservelink"><span class="gnav__pause">Reservation</span>
           </a>
           <div class="gnav__move">
           <span class="gnav__span">Reservation&nbsp;</span>
@@ -137,14 +138,14 @@
     <footer class="footer">
       <div class="footer__wrap">
         <ul class="footer__nav">
-          <li class="footer__list"><a href="#" class="footer__link">Reservation</a></li>
+          <li class="footer__list"><a href="#top" class="footer__link">Reservation</a></li>
           <li class="footer__list">03-0000-1234</li>
           <li class="footer__list">eureka@eureka.com</li>
         </ul>
         <p class="footer__copy"><small class="footer__small">&copy;2023 Eureka.<br>
             ALL RIGHT RESERVED.
           </small></p>
-        <p class="footer__top"><a href="#" class="footer__home">Pagetop</a></p>
+        <p class="footer__top"><a href="#top" class="footer__home">Pagetop</a></p>
       </div>
     </footer>
 
@@ -153,6 +154,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/function.js"></script>
+
 </body>
 
 </html>
